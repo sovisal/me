@@ -9,6 +9,7 @@ import {
     VideoCameraOutlined,
 } from "@ant-design/icons";
 import { Layout, Menu, Button, theme, ConfigProvider } from "antd";
+import { Link } from 'react-router-dom';
 
 const { Header, Sider, Content } = Layout;
 
@@ -89,6 +90,10 @@ const App: React.FC = () => {
                                 
                             }}
                         />
+                        <ul className="flex gap-3 mx-2">
+                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/about">About</Link></li>
+                        </ul>
                     </Header>
                     <Content
                         style={{
