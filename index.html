@@ -1,16 +1,33 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="https://sovisal.github.io/me/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sovisal Page</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <script type="module" crossorigin src="https://sovisal.github.io/me/assets/index-1110102a.js"></script>
-    <link rel="stylesheet" href="https://sovisal.github.io/me/assets/index-50256989.css">
-  </head>
-  <body>
+    <script type="text/javascript">
+        (function (l) {
+            if (l.search[1] === "/") {
+                var decoded = l.search
+                    .slice(1)
+                    .split("&")
+                    .map(function (s) {
+                        return s.replace(/~and~/g, "&");
+                    })
+                    .join("?");
+                window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+            }
+        })(window.location);
+    </script>
+  <script type="module" crossorigin src="https://sovisal.github.io/me/assets/index-1110102a.js"></script>
+  <link rel="stylesheet" href="https://sovisal.github.io/me/assets/index-50256989.css">
+</head>
+
+<body>
     <div id="root"></div>
     
-  </body>
+</body>
+
 </html>
